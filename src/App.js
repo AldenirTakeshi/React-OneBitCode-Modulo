@@ -1,10 +1,10 @@
 import "./App.css";
-import HelloWorld from "./HelloWorld";
+import Planets from "./components/Planets/Planets";
 
 function App() {
   return (
     <div className="App">
-      <HelloWorld />
+      <Planets />
     </div>
   );
 }
