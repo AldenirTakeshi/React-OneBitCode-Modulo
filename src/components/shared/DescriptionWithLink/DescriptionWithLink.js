@@ -1,6 +1,9 @@
 import React from "react";
 
 const DescriptionWithLink = (props) => {
+  if (!props.description) {
+    return null;
+  }
   if (props.linkURL) {
     return (
       <>

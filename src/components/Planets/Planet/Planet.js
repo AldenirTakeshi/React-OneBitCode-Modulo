@@ -19,6 +19,7 @@ const Planet = (props) => {
       <DescriptionWithLink description={props.description} linkURL={props.linkURL} />
       <br />
       <GrayImg imgUrl={props.imgUrl} gray={props.gray} />
+      <hr />
     </div>
   );
 };

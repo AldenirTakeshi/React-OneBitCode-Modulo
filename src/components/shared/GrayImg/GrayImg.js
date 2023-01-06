@@ -6,7 +6,7 @@ const GrayImg = (props) => {
     <img
       className={props.gray ? "gray-img" : "color-img"}
       src={props.imgUrl}
-      alt="Mercúrio IMG"
+      alt="Planet IMG"
     />
   );
 };
