@@ -4,11 +4,11 @@ const DescriptionWithLink = (props) => {
   if (!props.description) {
     return null;
   }
-  if (props.linkURL) {
+  if (props.link) {
     return (
       <>
         <p>{props.description}</p>
-        <a href={props.linkURL}>{props.linkURL}</a>
+        <a href={props.link}>{props.link}</a>
       </>
     );
   } else {

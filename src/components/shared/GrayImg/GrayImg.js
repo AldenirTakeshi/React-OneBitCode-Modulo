@@ -5,7 +5,7 @@ const GrayImg = (props) => {
   return (
     <img
       className={props.gray ? "gray-img" : "color-img"}
-      src={props.imgUrl}
+      src={props.img_url}
       alt="Planet IMG"
     />
   );
