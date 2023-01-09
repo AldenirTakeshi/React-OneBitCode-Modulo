@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import Form from "./Form/Form";
 import Planet from "./Planet/Planet";
 
 //Chamada de api
@@ -28,22 +29,15 @@ const Planets = () => {
     });
   }, []);
 
-  const removeLast = () => {
-    let new_planets = [...planets];
-    new_planets.pop();
-    setPlanets(new_planets);
-  };
-
-  const duplicate = () => {
-    let last_planets = planets[planets.length - 1];
-    setPlanets([...planets, last_planets]);
+  const addPlanet = (new_planet) => {
+    setPlanets([...planets, new_planet]);
   };
 
   return (
     <>
       <h3>Planets List</h3>
-      <button onClick={removeLast}>Remove Last</button>
-      <button onClick={duplicate}>Duplicate</button>
+      <hr />
+      <Form addPlanet={addPlanet} />
       <hr />
       {planets.map((planet, index) => (
         <Planet
